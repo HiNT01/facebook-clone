@@ -15,7 +15,7 @@
     align-items: center;
     height: 56px;
     box-shadow: rgb(51, 51, 51) 0px 1px 3px;
-
+    z-index: 10;
 }
 .header__left {
     display: flex;
@@ -88,6 +88,7 @@
     transform: translateX(-50%);
     top: 50px;
     display: none;
+ 
 }
 .nav__item i {
     color:rgb(101,103,107);
@@ -129,7 +130,9 @@
     justify-content: center;
     margin-left: 8px;
     position: relative;
+    
 }
+
 .header__account-item a i {
     color: #000;
 }
@@ -197,9 +200,14 @@
     border-radius: 8px;
     background-color: rgba(255,255,255,0.4);
 }
-.content__link img {
+.content__link > img {
     width:28px;
     height:28px;
+    border-radius: 50%;
+}
+.avatar {
+    width:40px;
+    height:40px;
     border-radius: 50%;
 }
 .content__link {
