@@ -280,16 +280,17 @@ html {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #65676b;
-    
     padding:8px 16px;
 }
 .content__news-info {
     width:calc(100% - 32px);
+    height: 100%;
     margin: 0px auto;
     display: flex;
     padding:8px 0px;
     justify-content: space-between;
     border-top: 1px solid #65676b;
+    position: relative;
 }
 .content__news-info > button {
     width:calc((100% - 16px)/3);
@@ -298,4 +299,31 @@ html {
     border: none;
     background-color: transparent;
     text-transform: capitalize;
+}
+.list-animation {
+    display: flex;
+    height: 200px;
+    
+}
+.list-animation div {
+    width:50px;
+    height: 50px;
+    background-color: red;
+}
+.btn__emojis:hover {
+    background-color: rgba(60, 59, 59,0.7);
+    border-radius: 8px;
+}
+.btn__emojis:hover .emojis {
+    display: flex;
+    
+}
+.emojis {
+    display: none;
+
+    position: absolute;
+    top: -35px;
+    background-color: red;
+    padding:5px 10px;
+    border-radius:8px;
 }
